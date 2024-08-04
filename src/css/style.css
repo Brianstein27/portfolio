@@ -447,7 +447,7 @@ i {
     color: var(--text-highlight);
   }
 
-  #about p {
+  p {
     font-family: "montserrat", sans-serif;
     opacity: 0.8;
     font-size: 18px;
