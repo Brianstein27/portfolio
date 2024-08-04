@@ -174,7 +174,7 @@ i {
     justify-content: space-between;
   }
 
-  #projects img {
+  .project-images img {
     width: 105px;
     height: 230px;
     border-radius: 10px;
@@ -236,7 +236,7 @@ i {
     font-size: 22px;
   }
 
-  #projects img {
+  .project-images img {
     width: 228px;
     height: 467px;
   }
