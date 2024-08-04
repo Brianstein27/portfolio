@@ -148,8 +148,13 @@ i {
   }
 
   a i {
-    font-size: 16px;
+    font-size: 28px;
     margin-right: 6px;
+    opacity: 0.95;
+  }
+
+  .about-content a i{
+    font-size: 18px;
   }
 
   .contact-main a {
@@ -196,6 +201,61 @@ i {
   .footer a {
     font-size: 14px;
     color: var(--text-highlight);
+  }
+}
+
+/* tablet styles */
+
+@media (min-width: 768px ) {
+  body {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .personal span:last-of-type {
+    font-size: 20px;
+  }
+
+  header h1 {
+    /* font-size: 18px; */
+  }
+
+  nav a i {
+    font-size: 36px;
+  }
+
+  .socials {
+    gap: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .project-header h2 {
+    font-size: 22px;
+  }
+
+  #projects img {
+    width: 228px;
+    height: 467px;
+  }
+
+  .about-content a {
+    font-size: 20px;
+  }
+
+  .about-content a i{
+    font-size: 22px;
+    margin-right: 12px;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+
+  .footer a {
+    font-size: 16px
   }
 }
 
@@ -388,7 +448,7 @@ i {
   }
 
   #about p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "montserrat", sans-serif;
     opacity: 0.8;
     font-size: 18px;
     line-height: 150%;
@@ -427,7 +487,7 @@ i {
 
   .project-header span {
     display: flex;
-    font-family: "Montserrat", sans-serif;
+    font-family: "montserrat", sans-serif;
     font-size: 14px;
   }
 
@@ -440,7 +500,7 @@ i {
   }
 
   .project-description p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "montserrat", sans-serif;
     line-height: 145%;
     opacity: 0.8;
   }
@@ -458,7 +518,7 @@ i {
   }
 
   .contact-main h2 {
-    font-family: "Nord", sans-serif;
+    font-family: "nord", sans-serif;
     font-size: 31px;
     color: var(--text-highlight);
   }
@@ -469,7 +529,7 @@ i {
   }
 
   .contact-main {
-    font-family: "Montserrat", sans-serif;
+    font-family: "montserrat", sans-serif;
     opacity: 0.8;
   }
 
@@ -488,7 +548,7 @@ i {
     border-top: 1px solid var(--text-regular);
     padding-top: 2.5em;
     font-size: 15px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "montserrat", sans-serif;
     opacity: 0.8;
   }
 
