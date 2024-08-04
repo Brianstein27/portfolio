@@ -29,11 +29,11 @@
 
 html {
   scroll-behavior: smooth;
+  background: linear-gradient(123deg, #1e1b4b 13.61%, #070622 106.97%);
 }
 
 body {
   font-family: "Nord", sans-serif;
-  background: linear-gradient(123deg, #1e1b4b 13.61%, #070622 106.97%);
   color: var(--text-regular);
   margin: 0;
   padding: 0;
@@ -104,7 +104,7 @@ i {
   header h1 {
     font-size: 15px;
     font-weight: 300;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   .nav-section {
@@ -137,7 +137,7 @@ i {
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   a {
