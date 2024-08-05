@@ -108,7 +108,7 @@ img {
   header h1 {
     font-size: 15px;
     font-weight: 300;
-    opacity: 0.9;
+    /* opacity: 0.9; */
   }
 
   .nav-section {
@@ -141,7 +141,7 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-    opacity: 0.9;
+    /* opacity: 0.9; */
   }
 
   a {
@@ -282,7 +282,7 @@ img {
   }
 
   nav a {
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .nav-section {
@@ -346,6 +346,10 @@ img {
     font-weight: 900;
   }
 
+  nav .active:hover {
+    color: var(--text-highlight);
+  }
+
   nav,
   main {
     width: 50%;
@@ -373,8 +377,8 @@ img {
     pointer-events: none;
     background: radial-gradient(
       600px at var(--x) var(--y),
-      rgba(29, 78, 216, 0.37),
-      transparent 80%
+      rgba(29, 78, 216, 0.29),
+      transparent 90%
     );
   }
 
@@ -403,11 +407,16 @@ img {
   }
 
   #landing {
-    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
-  #landing > img {
-    position: absolute;
+  .landing-image-container {
+    display: flex;
+    gap: 2em;
+  }
+
+  .landing-image-container > img {
     border-radius: 16px;
     box-shadow:
       0px 394px 110px 0px rgba(0, 0, 0, 0),
@@ -419,28 +428,33 @@ img {
     height: 475px;
   }
 
-  #landing > img:first-of-type {
-    top: 70px;
-    left: 0px;
+  .landing-image-container > img:first-of-type {
+    margin-bottom: 5em;
   }
 
-  #landing > img:last-of-type {
+  .landing-image-container > img:last-of-type {
+    margin-top: 5em;
     right: 20px;
     top: 300px;
   }
 
   #about {
-    position: relative;
-  }
-
-  #about div {
-    position: absolute;
-    top: 15em;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
   }
 
   .fa-download {
     font-size: 18px;
     margin-right: 8px;
+  }
+
+  #about p {
+    z-index: 2;
+  }
+
+  #about:hover > p {
+    /* opacity: 1; */
   }
 
   #about a {
@@ -453,7 +467,7 @@ img {
 
   p {
     font-family: "montserrat", sans-serif;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     font-size: 18px;
     line-height: 150%;
   }
@@ -506,7 +520,7 @@ img {
   .project-description p {
     font-family: "montserrat", sans-serif;
     line-height: 145%;
-    opacity: 0.8;
+    /* opacity: 0.8; */
   }
 
   .project-description p:last-of-type {
@@ -518,7 +532,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-around;
+    gap: 15em;
+    /* justify-content: space-around; */
   }
 
   .contact-main h2 {
@@ -534,11 +549,11 @@ img {
 
   .contact-main {
     font-family: "montserrat", sans-serif;
-    opacity: 0.8;
+    /* opacity: 0.8; */
   }
 
   .contact-main a {
-    opacity: 1;
+    /* opacity: 1; */
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -553,11 +568,11 @@ img {
     padding-top: 2.5em;
     font-size: 15px;
     font-family: "montserrat", sans-serif;
-    opacity: 0.8;
+    /* opacity: 0.8; */
   }
 
   .footer a {
-    opacity: 1;
+    /* opacity: 1; */
     font-weight: bold;
   }
 
@@ -569,6 +584,10 @@ img {
 @media (min-width: 1536px) {
   .container {
     max-width: 1280px;
+  }
+
+  .landing-image-container {
+    gap: 3em;
   }
 
   nav {
@@ -587,22 +606,14 @@ img {
   .personal span:last-of-type {
     font-size: 1.5rem;
   }
- 
+
   .socials {
     gap: 1.9em;
   }
 
-  #landing > img {
+  .landing-image-container > img {
     width: 290px;
     height: 620px;
-  }
-
-  #landing > img:first-of-type {
-    top: 160px;
-  }
-
-  #landing > img:last-of-type {
-    top: 320px;
   }
 
   #about div {
